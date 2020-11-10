@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+{% block title %} <title>Birthday</title> {% endblock %}
+{% block nav-links %}<a href="{% url 'todo:index' %}">ToDo List</a>{% endblock %}
+{% block content %}
+    <h2>It is my 
+        <span style="color: springgreen;">Birth</span><span style="color: lightpink;">day</span> 
+    </h2>
+    {% if birthday %}
+        <h1>Today is {{name}} birthday!!! 🎉</h1>
+    {% else %}
+        <h1>It isn't {{name}}'s <span style="color: springgreen;">Birth</span><span style="color: lightpink;">day</span> yet.</h1> <h1>Wait to {{month}} {{day}}.</h1>
+    {% endif%}
+{% endblock %}

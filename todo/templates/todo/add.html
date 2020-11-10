@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+{% block title %} <title>ToDo App</title> {% endblock %}
+{% block nav-links %}<a href="{% url 'birthday:index' %}">Is it my birthday?</a>{% endblock %}
+{% block content %}
+    <h2>My 
+        <span style="color: springgreen;">TO</span><span style="color: lightpink;">DO</span> 
+        List
+    </h2>
+    <h3>Add a task:</h3>
+    <form action="{% url 'todo:add' %}" method="POST">
+        {{ form }}
+        <input type="submit" value="Add task">
+    </form>
+    <a class="add" href="{% url 'todo:index' %}">Back to task list</a>
+{% endblock %}

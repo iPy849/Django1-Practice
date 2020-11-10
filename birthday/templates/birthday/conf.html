@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+{% block title %} <title>Birthday onfs</title> {% endblock %}
+{% block nav-links %}<a href="{% url 'todo:index' %}">ToDo List</a>{% endblock %}
+{% block content %}
+    <h2>It is my 
+        <span style="color: springgreen;">Birth</span><span style="color: lightpink;">day</span> 
+    </h2>
+    <h3>Add a task:</h3>
+    <form action="{% url 'birthday:conf' %}" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Finish configurations">
+    </form>
+    {% if not_valid%}
+        <h2 style="color: red;">Fecha no válida</h2>
+    {% endif%}
+{% endblock %}

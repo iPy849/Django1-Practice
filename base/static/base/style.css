@@ -1,0 +1,115 @@
+body {
+    background-color: black;
+    color: lightgray;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: lightgray;
+    color: black;
+    padding: 0.5rem;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+a:hover {
+    color: blue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container a {
+    color: lightgray;
+}
+
+.container a:hover {
+    color: blue;
+}
+
+form {
+    padding: 2rem;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+form * {
+    margin-right: 1rem;
+}
+
+form *:last-child{
+    margin: 0;
+}
+
+input[type="text"]{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    border-bottom-color: lightgrey;
+    outline: none;
+    font-size: 20px;
+}
+
+input[type="number"]{
+    background-color: transparent;
+    color: white;   
+    border-color: transparent ;
+    border-bottom-color: lightgray;
+    border-style: solid;
+    outline: none;
+    font-size: 20px;
+}
+
+input[type="submit"]{
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 0.5rem;
+    color: white;
+    border-color: lightgrey;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+input[type="submit"]:hover{
+    background-color: lightgray;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 0.5rem;
+    color: black;
+    border-color: darkgrey;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+
+.container h2 {
+    font-size: 50px;
+
+}
+
+.container ul {
+    list-style-type: none;  
+}
+
+ul li {
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 1px solid lightslategray;
+}
+
+.add {
+    position: fixed;
+    bottom: 5%;
+    align-self: flex-start;
+}
